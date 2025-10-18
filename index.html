@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calculadora Electrónica</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🔌 Calculadora de Fórmulas Electrónicas</h1>
+
+  <div class="card">
+    <label for="formula">Selecciona una fórmula:</label>
+    <select id="formula">
+      <option value="ohm">Ley de Ohm (V = I × R)</option>
+      <option value="divisor">Divisor de Tensión</option>
+      <option value="potencia">Potencia (P = V × I)</option>
+    </select>
+
+    <div id="inputs"></div>
+
+    <button onclick="calcular()">Calcular</button>
+
+    <div id="resultado"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
